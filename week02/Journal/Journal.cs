@@ -17,23 +17,16 @@ public class Journal
         Console.WriteLine($"\nTotal Entries: {_entries.Count}\n");
 
         if (_entries.Count == 0)
-
         {
-
             Console.WriteLine("Journal is empty.");
-
             return;
-
         }
 
         foreach (Entry entry in _entries)
 
         {
-
             entry.Display();
-
         }
-
     }
 
     public void SaveToFile(string fileName)
@@ -43,11 +36,8 @@ public class Journal
         using (StreamWriter output = new StreamWriter(fileName))
 
         {
-
             foreach (Entry entry in _entries)
-
             {
-
                 output.WriteLine($"{Escape(entry.Date)},{Escape(entry.Prompt)},{Escape(entry.Response)}");
 
             }
