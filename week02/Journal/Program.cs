@@ -46,6 +46,13 @@ class Program
                 case "3":
                     Console.Write("Filename: ");
                     string loadFilename = Console.ReadLine();
+
+                    while (string.IsNullOrWhiteSpace(loadFilename))
+                    {
+                        Console.Write("Filename cannot be empty. Please enter a filename: ");
+                        loadFilename = Console.ReadLine();
+                    }
+
                     journal.LoadFromFile(loadFilename);
                     Console.WriteLine("Journal loaded successfully!");
                     break;
@@ -53,6 +60,13 @@ class Program
                 case "4":
                     Console.Write("Filename: ");
                     string saveFilename = Console.ReadLine();
+
+                    while (string.IsNullOrWhiteSpace(saveFilename))
+                    {
+                        Console.Write("Filename cannot be empty. Please enter a filename: ");
+                        saveFilename = Console.ReadLine();
+                    }
+
                     journal.SaveToFile(saveFilename);
                     Console.WriteLine("Journal saved successfully!");
                     break;
