@@ -47,6 +47,10 @@ class Program
                     Console.Write("Filename: ");
                     string loadFilename = Console.ReadLine();
 
+                    // Exceeding Requirement:
+                    // Validates the filename before loading to prevent
+                    // empty filenames and improve the user experience.
+
                     while (string.IsNullOrWhiteSpace(loadFilename))
                     {
                         Console.Write("Filename cannot be empty. Please enter a filename: ");
