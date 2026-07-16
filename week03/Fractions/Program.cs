@@ -3,7 +3,77 @@ using System;
 class Program
 {
     static void Main(string[] args)
+
     {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
+        Fraction fraction1 = new Fraction();
+
+        Fraction fraction2 = new Fraction(6);
+
+        Fraction fraction3 = new Fraction(6, 7);
+
+        Console.WriteLine("Fractions created with constructors:");
+
+        Console.WriteLine(fraction1.GetFractionString());
+
+        Console.WriteLine(fraction2.GetFractionString());
+
+        Console.WriteLine(fraction3.GetFractionString());
+
+        Console.WriteLine();
+
+        // Test getters
+
+        Console.WriteLine("Top: " + fraction3.GetTop());
+
+        Console.WriteLine("Bottom: " + fraction3.GetBottom());
+
+        Console.WriteLine();
+
+        // Test setters
+
+        fraction3.SetTop(3);
+
+        fraction3.SetBottom(4);
+
+        Console.WriteLine("After using setters:");
+
+        Console.WriteLine(fraction3.GetFractionString());
+
+        Console.WriteLine("Decimal: " + fraction3.GetDecimalValue());
+
+        Console.WriteLine();
+
+
+        Fraction one = new Fraction();
+
+        Fraction five = new Fraction(5);
+
+        Fraction threeFourths = new Fraction(3, 4);
+
+        Fraction oneThird = new Fraction(1, 3);
+
+        Console.WriteLine(one.GetFractionString());
+
+        Console.WriteLine(one.GetDecimalValue());
+
+        Console.WriteLine();
+
+        Console.WriteLine(five.GetFractionString());
+
+        Console.WriteLine(five.GetDecimalValue());
+
+        Console.WriteLine();
+
+        Console.WriteLine(threeFourths.GetFractionString());
+
+        Console.WriteLine(threeFourths.GetDecimalValue());
+
+        Console.WriteLine();
+
+        Console.WriteLine(oneThird.GetFractionString());
+
+        Console.WriteLine(oneThird.GetDecimalValue());
+
     }
+
 }
