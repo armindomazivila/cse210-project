@@ -4,7 +4,7 @@ public class Fraction
 {
     // Private attributes
     private int _top;
-    private. int _bottom;
+    private int _bottom;
 
     // Constructor: 1/1
     public Fraction()
