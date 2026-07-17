@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Exceeding Requirement:
+
         // This program loads multiple scriptures from a file
         // and randomly selects one scripture for memorization.
         // This allows users to practices more than on scripture.
