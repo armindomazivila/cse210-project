@@ -36,7 +36,7 @@ class Program
 
         Console.WriteLine();
 
-        // Assignment examples
+        // This is the assignments examples
         Fraction one = new Fraction();
         Fraction five = new Fraction(5);
         Fraction threeFourths = new Fraction(3, 4);
