@@ -1,0 +1,4 @@
+200
+Simple|Wake up early each 5:30 except Sunday.|Exercise cardial by 30 minutes|200|True
+Eternal|Having a family prayers each evening.|Before going to sleep.|500
+Checklist|Study the learning material each day except on Sunday.|Studying and submit the assignments on time.|1000|0|5|350
